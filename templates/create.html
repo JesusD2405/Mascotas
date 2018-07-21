@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registrar Usuario</title>
+	<meta http-equiv="Content-Type" content="text/html;charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Compiled and minified CSS -->
+    <!-- link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" -->
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+</head>
+<body>     
+  <!-- Navbar -->
+  <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+          <a id="logo-container" href="index.html" class="brand-logo center">Mascotas</a>
+      </div>
+  </nav>
+  <!-- End Navbar -->
+    <div class="row">
+      <div class="col s7 push-s5">
+      <!-- Formulario de Registro de Usuario -->
+      <div class="container">
+        <form action="mascotas.js" method="post">
+          <fieldset>
+            <legend>Registrarse Gratis</legend>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s11">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="icon_prefix" type="text" maxlength="20" size="20" class="validate">
+                                <label for="icon_prefix">Usuario</label>
+                            </div>
+
+                            <div class="input-field col s5">
+                                <i class="material-icons prefix">editar</i>
+                                <input id="icon_prefix" type="text" maxlength="10" size="10" class="validate">
+                                <label for="icon_prefix">Nombre</label>
+                            </div>
+
+                            <div class="input-field col s5">
+                                <i class="material-icons prefix">editar</i>
+                                <input id="icon_prefix" type="text" maxlength="10" size="10" class="validate">
+                                <label for="icon_prefix">Segundo nombre</label>
+                            </div>
+
+                            <div class="input-field col s11">
+                                <i class="material-icons prefix">editar</i>
+                                <input id="icon_prefix" type="text" maxlength="30" size="30" class="validate"><br>
+                                <label for="icon_prefix">Apellidos</label>
+                            </div>
+
+                            <div class="input-field col s11">
+                                <i class="material-icons prefix">evento</i>
+                                <input id="icon_prefix" type="text" maxlength="10" size="10" class="validate"><br>
+                                <label for="icon_prefix">Fecha de nacimiento</label>
+                            </div>
+
+                            <div class="input-field col s5">
+                              <select class="browser-default">
+                                <option value="" disabled selected>Tipo de Documento</option>
+                                <option value="1">C.I</option>
+                                <option value="2">Pasaporte</option>
+                                <option value="3">Rif</option>
+                              </select>
+                            </div>
+
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">editar</i>
+                                <input id="icon_prefix" type="text" maxlength="12" size="12" class="validate"><br>
+                                <label for="icon_prefix">Nº de Documento</label>
+                            </div>
+
+                            <div class="input-field col s11">
+                                <i class="material-icons prefix">location_on</i>
+                                <input id="icon_prefix" type="text" maxlength="30" size="30" class="validate"><br>
+                                <label for="icon_prefix">Direccion</label>
+                            </div>
+
+                            <div class="input-field col s5">
+                              <select class="browser-default">
+                                  <option value="" disabled selected>Estado</option>
+                                  <option value="1">Amazonas</option>
+                                  <option value="2">Anzoátegui</option>
+                                  <option value="3">Apure</option>
+                                  <option value="4">Aragua</option>
+                                  <option value="5">Barinas</option>
+                                  <option value="6">Bolívar</option>
+                                  <option value="7">Carabobo</option>
+                                  <option value="8">Cojedes</option>
+                                  <option value="9">Delta Acacuro</option>
+                                  <option value="10">Distrito Capital</option>
+                                  <option value="11">Falcón</option>
+                                  <option value="12">Guárico</option>
+                                  <option value="13">Lara</option>
+                                  <option value="14">Mérida</option>
+                                  <option value="15">Miranda</option>
+                                  <option value="16">Monagas</option>
+                                  <option value="17">Nueva Esparta</option>
+                                  <option value="18">Portuguesa</option>
+                                  <option value="19">Sucre</option>
+                                  <option value="20">Táchira</option>
+                                  <option value="21">Trujillo</option>
+                                  <option value="22">Vargas</option>
+                                  <option value="23">Yaracuy</option>
+                                  <option value="24">Zulia</option>
+                              </select>
+                            </div>
+
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">location_city</i>
+                                <input id="icon_prefix" type="text" maxlength="30" size="30" class="validate"><br>
+                                <label for="icon_prefix b">Ciudad</label>
+                            </div>
+
+                            <div class="input-field col s5">
+                              <select class="browser-default">
+                                <option value="" disabled selected>Tipo de Contacto</option>
+                                <option value="1">Casa</option>
+                                <option value="2">Personal</option>
+                                <option value="3">Oficina</option>
+                              </select>
+                            </div>
+
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">phone_in_talk</i>
+                                <input id="icon_prefix" type="text" maxlength="15" size="15" class="validate"><br>
+                                <label for="icon_prefix">Numero de contacto</label>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="center">
+                      <button class="btn waves-effect waves-light" type="reset" name="borrar">Borrar
+                        <i class="material-icons">delete_forever</i>
+                      </button>
+
+                      <button class="btn waves-effect waves-light" type="submit" name="action">Continuar
+                        <i class="material-icons right">send</i>
+                      </button>
+                    </div>
+                </div>
+          </fieldset>     
+        </form>
+      </div>   
+      </div>
+        <div class="col s5 pull-s7">
+            <div class="parallax-container valign-wrapper">
+                <div class="section no-pad-bot">
+                    <div class="container">
+                        <div class="row center">
+                            <h5 class="header col s12 light">Las Mascotas son los Mejores Amigos de la Familia</h5>
+                        </div>
+                    </div>
+                </div>
+              <div class="parallax"><img class="responsive-img" src="imagen2.jpg" alt="Unsplashed imagen img 2"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="page-footer teal">
+      <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4 center">
+                    Made by <a class="brown-text text-lighten-3" href="https://www.instagram.com/idepixel/?hl=es-la">Idepixel</a>
+                </div>
+
+                <div class="col s12 m4 center">
+                    <a class="brown-text text-lighten-3" href="#">Privacidad</a>
+                </div>
+
+                <div class="col s12 m4 center">
+                    <a class="brown-text text-lighten-3" href="#">Acuerdos legales</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Compiled and minified JavaScript -->
+    <!-- script src="https://code.jquery.com/jquery-2.1.1.min.js"></script -->
+    <script src="js/jquery.min.js"></script>
+    <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script -->
+    <script src="js/materialize.min.js"></script>
+    <script src="js/mascotas.js"></script>
+</body>
+</html>

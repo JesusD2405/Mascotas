@@ -1,0 +1,163 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mascotas</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!-- Compiled and minified CSS -->
+        <!-- link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/materialize.min.css' %}">
+        <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection">
+</head>
+<body>
+
+    {% block content %}
+    
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="#" class="brand-logo center">Mascotas</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#¿ Como Funciona ?">¿Como Funciona?</a></li>
+                        <li><a href="#Desarrolladores">Desarrolladores</a></li>
+                        <li><a href="pagina1.html">Registrarse</a></li>
+                    </ul>
+
+                    <ul id="nav-mobile" class="sidenav">
+                        <li><a href="pagina1.html">registrarse</a></li>
+                        <li><a href="#¿ Como Funciona ?">¿Como Funciona?</a></li>
+                        <li><a href="#Desarrolladores">Desarrolladores</a></li>
+                    </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+
+        <div id="index-banner" class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <br><br>
+                    <h1 class="header center teal-text text-lighten-2">Soporte Veterinario</h1>
+                        <div class="row center">
+                            <h5 class="header col s12 light">¡ Todo en la comodidad de su hogar !</h5>
+                        </div>
+                        <div class="row center">
+                            <a href="{% url 'login' %}" id="Iniciar-sesión" class="btn-large waves-effect waves-light teal lighten-1">Iniciar sesión</a>
+                        </div>
+                    <br><br>
+                </div>
+            </div>
+            <div class="parallax"><img class="responsive-img" src="imagen3.jpeg" alt="Unsplashed imagen img 1">
+            </div>
+        </div>
+
+        <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                        <h5 class="center">¿ Que es Mascotas ?</h5>
+
+                        <p class="light">Mascotas es una pagina web diseñada para el enlace con todas las veterinarias,fundaciones y centros de ayuda animalista. Encargada de prestar una mayor conexion y la unificacion de todas estas.Facilitando al publico el axceso desde cualquier lugar.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m6">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+                        <a name="¿ Como Funciona ?"></a>
+                        <h5 class="center">¿ Como Funciona ?</h5>
+
+                        <p class="light">Esta pagina funciona mediante el registro de usuario, el cual permite el acceso al manejo de las herramientas de inventarios, facturacion, sistema de adopcion, registro medico entre otros.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light">Medicos Veterinarios, Fundaciones y voluntarios conectados en toda la region</h5>
+                </div>
+            </div>
+        </div>
+            <div class="parallax"><img class="responsive-img" src="imagen1.jpeg" alt="Unsplashed imagen img 1"></div>
+        </div>
+
+        <div class="container">
+        <div class="section">
+
+            <div class="row">
+                <div class="col s12 m4 center">
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <h4>Caracteristicas</h4>
+                    <p class="center-align light">Todos nuestros servicios son a domicilio en las zonas centricas de Puerto Ordaz y San Felix.<br>
+                    </p>
+                </div>
+
+                 <div class="col s12 m4 center">
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <h4>Beneficios</h4>
+                    <p class="center-align light">Todos nuestros servicios son a domicilio en las zonas centricas de Puerto Ordaz y San Felix.<br>
+                    </p>
+                </div>
+
+                 <div class="col s12 m4 center">
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <h4>Novedades Incluidas</h4>
+                    <p class="center-align light">Todos nuestros servicios son a domicilio en las zonas centricas de Puerto Ordaz y San Felix.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                <h5 class="header col s12 light">Las Mascotas son los Mejores Amigos de la Familia</h5>
+                </div>
+            </div>
+        </div>
+            <div class="parallax"><img class="responsive-img" src="imagen2.jpg" alt="Unsplashed imagen img 2"></div>
+        </div>
+
+        <footer class="page-footer teal">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <h5 class="white-text center">Ventajas con otros sistemas Web</h5>
+                        <p class="grey-text text-lighten-4">Somos una empresa de Programacion Web, ubicada en Venezuela, Puerto Ordaz-Edo.Bolivar. Y esta es la Primera Pagina del Pollo Miguel.</p>
+                    </div>
+
+                    <div class="col s12 m6">
+                        <a name="Desarrolladores"></a>
+                        <h5 class="white-text center">Desarroladores</h5>
+                        <p class="grey-text text-lighten-4">Somos una empresa de Programacion Web, ubicada en Venezuela, Puerto Ordaz-Edo.Bolivar. Y esta es la Primera Pagina del Pollo Miguel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    Made by <a class="brown-text text-lighten-3" href="https://www.instagram.com/idepixel/?hl=es-la">Idepixel</a>
+                </div>
+            </div>
+        </footer>
+
+         <!-- Compiled and minified JavaScript -->
+
+    {% endblock content %}
+    
+    <!-- Compiled and minified JavaScript -->
+    <!-- script src="https://code.jquery.com/jquery-2.1.1.min.js"></script -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script -->
+    <script src="{% static 'js/materialize.min.js' %}"></script>
+    <script src="{% static 'js/mascotas.js' %}"></script>
+</body>
+</html>
